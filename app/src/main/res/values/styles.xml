@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActionBarOverlay" tools:targetApi="11">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@color/app_theme_color</item>
+        <item name="android:buttonStyle">@style/app_theme_color_btn</item>
+        <!--<item name="android:actionBarTabStyle" tools:targetApi="11">#ff0000</item>-->
+        <!--&lt;!&ndash;Support library compatibility&ndash;&gt;-->
+        <!--<item name="actionBarTabStyle">@drawable/tab</item>-->
+        <!--<item name="actionBarStyle">@style/My.ActionBar.Style</item>-->
+        <!--<item name="android:actionBarStyle" tools:targetApi="11">@style/My.ActionBar.Style</item>-->
+    </style>
+
+
+    <color name="app_theme_color">#C1253D</color>
+
+    <style name="app_theme_color_btn" parent="Widget.AppCompat.Button">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps" tools:targetApi="14">false</item>
+    </style>
+
+    <style name="filler_15dip">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">15dip</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+</resources>

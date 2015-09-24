@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ln_img_job_near_by"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.sunrise.interview.interviewspot.util.CustomMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollingCache="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_tab_job_near_by"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ln_img_job_near_by"
+            android:background="#ffffff"
+            android:layout_gravity="bottom"
+            android:layout_weight="1">
+
+            <ListView
+                android:id="@+id/lst_job_near_by"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="5dp"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
