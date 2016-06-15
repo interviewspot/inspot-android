@@ -1,14 +1,10 @@
-.gradle
-/local.properties
-/.idea
-.DS_Store
-/build
-/captures
+# Specifies files to intentionally ignore when using Git
+# http://git-scm.com/docs/gitignore
 
-/app/build/
-/app/build/*
-/build/
-/composer.phar
-.idea
-composer.lock
-*.iml
+node_modules/
+www/build/
+platforms/
+plugins/
+*.swp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,39 @@
+<!--
+  Generated template for the IntroducePage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-navbar *navbar>
+
+    <button menuToggle>
+        <ion-icon name='menu'></ion-icon>
+    </button>
+
+    <ion-title>
+        Introduction
+    </ion-title>
+    <!---->
+</ion-navbar>
+
+<ion-content padding class="introduce">
+    <div padding>
+        Interview Deadline: {{candidate.deadline}}
+    </div>
+    <div padding>
+        Role: {{candidate.role}}
+    </div>
+    <div padding>
+        Company: {{candidate.company}}
+    </div>
+    <div padding>
+        Responsibility:
+    </div>
+    <div padding [innerHTML]="candidate.responsibility">
+    </div>
+
+    <div padding>
+        <button block (click)="next()">Continue</button>
+    </div>
+</ion-content>

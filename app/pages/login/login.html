@@ -1,0 +1,33 @@
+<!--<ion-navbar *navbar>-->
+    <!--<ion-title>Login</ion-title>-->
+<!--</ion-navbar>-->
+<ion-navbar *navbar>
+
+    <button menuToggle>
+        <ion-icon name='menu'></ion-icon>
+    </button>
+
+    <ion-title>
+        Login
+    </ion-title>
+    <!---->
+</ion-navbar>
+
+
+
+<ion-content padding class="login">
+
+
+    <form #loginForm="ngForm" (ngSubmit)="login()">
+        <ion-list>
+            <ion-item>
+                <ion-input  [(ngModel)]="code" type="password" placeholder="Invitation Code" required></ion-input>
+            </ion-item>
+        </ion-list>
+        <div padding="">
+            <button type="submit" block>Login</button>
+        </div>
+    </form>
+
+
+</ion-content>
